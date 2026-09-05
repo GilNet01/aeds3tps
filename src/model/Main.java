@@ -24,15 +24,33 @@ public class Main {
 
             // chama a função certa de acordo com a opção escolhida
             switch (opcao) {
-                case 1 -> opcaoCarregarCSV();
-                case 2 -> opcaoInserirManual();
-                case 3 -> opcaoLerPorId();
-                case 4 -> opcaoAtualizar();
-                case 5 -> opcaoDeletar();
-                case 6 -> opcaoListarTodos();
-                case 7 -> opcaoOrdenacaoExterna();
-                case 0 -> System.out.println("Encerrando o sistema...");
-                default -> System.out.println("Opção inválida! Tente novamente.");
+                case 1:
+                    opcaoCarregarCSV();
+                    break;
+                case 2:
+                    opcaoInserirManual();
+                    break;
+                case 3:
+                    opcaoLerPorId();
+                    break;
+                case 4:
+                    opcaoAtualizar();
+                    break;
+                case 5:
+                    opcaoDeletar();
+                    break;
+                case 6:
+                    opcaoListarTodos();
+                    break;
+                case 7:
+                    opcaoOrdenacaoExterna();
+                    break;
+                case 0:
+                    System.out.println("Encerrando o sistema...");
+                    break;
+                default:
+                    System.out.println("Opção inválida! Tente novamente.");
+                    break;
             }
             System.out.println();
         } while (opcao != 0);
